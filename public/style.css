@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+.header-wrap {
+    height: 70px;
+    padding: 22px 0 0 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 20px -20px;
+
+}
+
+.hero {
+    padding: 26px 0 49px 0;
+}
+
+.hero img {
+    display: block;
+    width: 396px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    margin: 32px 0 16px 36px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.hero .text-hero {
+    width: 320px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 110%;
+    margin-left: 36px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+}
+
+
+
+.card {
+    position: relative;
+    margin-right: 20px;
+    width: 175px;
+    max-height: 400px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #222222;
+}
+
+.card-availiable {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    background: white;
+    padding: 4px 6px 5px 6px;
+    border-radius: 3px;
+    
+}
+
+.cards-list:last-child {
+    margin-right: 0;
+}
+
+
+.card .photo {
+    display: block;
+    width: 176px;
+}
+
+
+.card .star {
+    width: 14px;
+    margin-right: 2px;
+}
+
+.card .silver-text {
+    color: #918E9B;
+}
+
+.card .bold {
+    font-weight: 600;
+    line-height: 110%;
+}
+
+
+

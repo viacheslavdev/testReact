@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/header'
+import Hero from './components/hero'
+import Card from './components/card'
+import data from './data'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default function App() {
+    const cards = data.map(item => {
+        return (
+            <Card 
+            key={item.id}
+            {...item}
+            />
+        )
+    }
+    )
+    return (
+        <div>
+            < Header />
+            < Hero />
+            <section className="cards-list">
+                {cards}
+            </section>
+        </div>
+    )
 }
-
-export default App;
